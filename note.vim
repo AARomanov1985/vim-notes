@@ -23,7 +23,7 @@ syn keyword taskError		ERROR CRITICAL PROBLEM
 syn keyword taskTodo		TODO TARGET DESCRIPTION
 syn keyword taskDraft		DRAFT FIX CAUSE CODE_REVIEW
 syn keyword taskDone		DONE SUMMARY SOLUTION INFO
-syn keyword taskProgress 	INPROGRESS WAIT NOTE
+syn keyword taskProgress 	INPROGRESS WAIT NOTE CANCELED
 syn region  taskNote		start=+NOTE:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskImportant	start=+IMPORTANT:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskTips 		start=+TIPS:+ skip=+\\\\\|\\"+  end=+"+
