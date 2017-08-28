@@ -1,0 +1,5 @@
+# to create a link:
+sudo chmod +x newb newp newt
+sudo ln -s newb newp newt /usr/local/bin/
+# to create syntax in vim:
+sudo cp note.vim /usr/share/vim/vim74/syntax/

@@ -1,0 +1,19 @@
+mkdir '#1_P_OPEN_CATEGORY_PROJECTNAME'
+cd '#1_P_OPEN_CATEGORY_PROJECTNAME'
+touch notes.note
+echo -- PROJECT-XXX							>> notes.note
+echo DESCRIPTION							>> notes.note
+echo '	-- project description' 			>> notes.note
+echo TODO 									>> notes.note
+echo ' 	investigate			TODO' 			>> notes.note
+echo '	development			TODO' 			>> notes.note
+echo '	pullrequest			TODO'			>> notes.note
+echo '	code review			TODO' 			>> notes.note
+echo '	merge				TODO' 			>> notes.note
+echo '	close task			TODO' 			>> notes.note
+echo SUMMARY 								>> notes.note
+echo '	-- This project summary'	 		>> notes.note
+echo LINK 									>> notes.note
+echo '	--put links on pullrequests and KB-page (if exists)' >> notes.note
+echo INFO 									>> notes.note
+echo '	-- other info' 						>> notes.note
