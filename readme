@@ -1,4 +1,3 @@
-```bash
 # to create a link:
 sudo chmod +x newb newp newt
 sudo ln -s newb newp newt /usr/local/bin/
