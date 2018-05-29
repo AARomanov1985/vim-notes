@@ -1,0 +1,25 @@
+-- taskError
+ERROR, CRITICAL, PROBLEM, PROBLEMS
+
+-- taskTodo
+TODO, TARGET, DESCRIPTION, QA_TEST, SEE
+
+-- taskDraft
+DRAFT, FIX, CAUSE, CODE_REVIEW
+
+-- taskDone
+DONE, SUMMARY, SOLUTION, INFO, STATUS, DELIVERED, SUCCESS
+
+-- taskProgress
+INPROGRESS, WAIT, NOTE, LINK, CANCELED
+
+-- taskNote
+NOTES: notes notes notes"
+
+-- taskImportant
+IMPORTANT: imp words"
+
+-- taskTips
+TIPS: tips tips tips"
+
+

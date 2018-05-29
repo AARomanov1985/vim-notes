@@ -2,7 +2,7 @@
 " Language:		note
 " Maintainer:	Aleksandr Romanov
 " License:      Vim
-" Last Change:	2017 Aug 8
+" Last Change:	2018 May 29
 
 if exists("b:current_syntax")
   finish
@@ -19,12 +19,12 @@ syn match  taskComment	"--.*$"
 " Numbers:
 syn match TaskNumber	"-\=\<\d*\.\=[0-9_]\>"
 
-syn keyword taskError		ERROR CRITICAL PROBLEM
-syn keyword taskTodo		TODO TARGET DESCRIPTION
+syn keyword taskError		ERROR CRITICAL PROBLEM PROBLEMS
+syn keyword taskTodo		TODO TARGET DESCRIPTION QA_TEST SEE
 syn keyword taskDraft		DRAFT FIX CAUSE CODE_REVIEW
-syn keyword taskDone		DONE SUMMARY SOLUTION INFO
-syn keyword taskProgress 	INPROGRESS WAIT NOTE CANCELED
-syn region  taskNote		start=+NOTE:+ skip=+\\\\\|\\"+  end=+"+
+syn keyword taskDone		DONE SUMMARY SOLUTION INFO STATUS DELIVERED SUCCESS
+syn keyword taskProgress 	INPROGRESS WAIT NOTE LINK CANCELED
+syn region  taskNote		start=+NOTES:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskImportant	start=+IMPORTANT:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskTips 		start=+TIPS:+ skip=+\\\\\|\\"+  end=+"+
 
@@ -32,15 +32,16 @@ syn region  taskTips 		start=+TIPS:+ skip=+\\\\\|\\"+  end=+"+
 " Define the default highlighting.
 command -nargs=+ HiLink hi def link <args>
 HiLink taskComment		Comment
-HiLink taskDescription	Function
+HiLink taskDescription	        Function
 HiLink taskProgress		Function
 HiLink taskError		Special
-HiLink taskImportant	Special
+HiLink taskImportant	        Special
 HiLink taskTodo			Statement
 HiLink taskNote			Statement
 HiLink taskDraft		String
 HiLink taskDone			Type
 HiLink taskTips			Type
+" Not defined:
 HiLink taskNumber		Number
 HiLink taskType			Type
 
