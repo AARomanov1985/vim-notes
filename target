@@ -1,6 +1,6 @@
 # example:
 # target 2 T Java 'perform jvm tomorrow'
-name=#"$1"_"$2"_OPEN_"$3"_"$4"
+name=#"$1"_OPEN_"$2"_"$3"_"$4"
 mkdir "$name"
 cd "$name"
 touch notes.note
