@@ -4,9 +4,8 @@ name=#"$1"_OPEN_"$2"_"$3"_"$4"
 mkdir "$name"
 cd "$name"
 touch notes.note
-echo -- $name> notes.note
 echo TARGET>> notes.note
-echo -- target>> notes.note
+echo    $4 >> notes.note
 echo TODO>> notes.note
 echo '  complete target                 TODO' >> notes.note
 echo SUMMARY>> notes.note
