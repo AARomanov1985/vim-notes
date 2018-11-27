@@ -19,7 +19,7 @@ syn match  taskComment	"--.*$"
 " Numbers:
 syn match TaskNumber	"-\=\<\d*\.\=[0-9_]\>"
 
-syn keyword taskError		ERROR CRITICAL PROBLEM PROBLEMS FAIL FAILED
+syn keyword taskError		ERROR CRITICAL PROBLEM PROBLEMS FAIL FAILED DUE_DATE
 syn keyword taskTodo		TODO TARGET DESCRIPTION QA_TEST SEE
 syn keyword taskDraft		DRAFT FIX CAUSE CODE_REVIEW
 syn keyword taskDone		DONE SUMMARY SOLUTION INFO STATUS DELIVERED SUCCESS

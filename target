@@ -1,13 +1,22 @@
 # example:
 # target 2 T Java 'perform jvm tomorrow'
 name=#"$1"_OPEN_"$2"_"$3"_"$4"
+file=notes.note
 mkdir "$name"
 cd "$name"
-touch notes.note
-echo TARGET>> notes.note
-echo    $4 >> notes.note
-echo TODO>> notes.note
-echo '  complete target                 TODO' >> notes.note
-echo SUMMARY>> notes.note
-echo '  -- This task summary'>> notes.note
+touch $file
+echo TARGET>> $file
+echo    -- General target:>> $file
+echo    $4>> $file
+echo    >>$file
+echo    Success criteria: >> $file
+echo    -- When will it be considered that the goal is achieved? >> $file
+echo    -- Is it achievable?>> $file
+echo    -- What benefits will the solution of the task? >> $file
+echo    >> $file
+echo    DUE_DATE>>$file
+echo TODO>> $file
+echo '  complete target                 TODO' >> $file
+echo SUMMARY>> $file
+echo '  -- This task summary'>> $file
 echo done
