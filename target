@@ -6,17 +6,15 @@ mkdir "$name"
 cd "$name"
 touch $file
 echo TARGET>> $file
-echo    -- General target:>> $file
-echo    $4>> $file
-echo    >>$file
-echo    Success criteria: >> $file
-echo    -- When will it be considered that the goal is achieved? >> $file
-echo    -- Is it achievable?>> $file
-echo    -- What benefits will the solution of the task? >> $file
-echo    >> $file
-echo    DUE_DATE>>$file
+echo     -- General target:>> $file
+echo     $4>> $file
+echo     -- When will it be considered that the goal is achieved? >> $file
+echo     -- Is it achievable?>> $file
+echo     -- Benefits:>> $file
+echo     >> $file
+echo     DUE_DATE>>$file
 echo TODO>> $file
-echo '  complete target                 TODO' >> $file
+echo '   complete target                 TODO' >> $file
 echo SUMMARY>> $file
-echo '  -- This task summary'>> $file
+echo '   -- This task summary'>> $file
 echo done
