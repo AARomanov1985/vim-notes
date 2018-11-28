@@ -1,6 +1,7 @@
 mkdir "$1"
 cd "$1"
 touch notes.note
+echo -- $(date) >> notes.note
 echo -- $1>> notes.note
 echo STATUS TODO>> notes.note
 echo DESCRIPTION>> notes.note
