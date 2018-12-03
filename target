@@ -14,6 +14,7 @@ echo     -- Is it achievable?>> $file
 echo     -- Benefits:>> $file
 echo     >> $file
 echo     DUE_DATE>>$file
+echo     DONE_ON>>$file
 echo TODO>> $file
 echo '   complete target                 TODO' >> $file
 echo SUMMARY>> $file

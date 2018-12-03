@@ -22,7 +22,7 @@ syn match TaskNumber	"-\=\<\d*\.\=[0-9_]\>"
 syn keyword taskError		ERROR CRITICAL PROBLEM PROBLEMS FAIL FAILED DUE_DATE
 syn keyword taskTodo		TODO TARGET DESCRIPTION QA_TEST SEE
 syn keyword taskDraft		DRAFT FIX CAUSE CODE_REVIEW
-syn keyword taskDone		DONE SUMMARY SOLUTION INFO STATUS DELIVERED SUCCESS
+syn keyword taskDone		DONE SUMMARY SOLUTION INFO STATUS DELIVERED SUCCESS DONE_ON
 syn keyword taskProgress 	INPROGRESS WAIT NOTE LINK CANCELED
 syn region  taskNote		start=+NOTES:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskImportant	start=+IMPORTANT:+ skip=+\\\\\|\\"+  end=+"+
