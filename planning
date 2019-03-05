@@ -1,0 +1,24 @@
+#!/bin/bash
+param1=$1
+typeOfPlan=${param1^^}
+startDate=$2
+endDate=$3
+file="$1"_plan.note
+touch $file
+echo "-- $(date)">> $file
+echo "DESCRIPTION">> $file
+echo "    TYPE_OF_PLAN:                 $typeOfPlan">> $file
+echo "    START_DATE:                   $2">> $file
+echo "    END_DATE:                     $3">> $file
+echo >> $file
+echo "    LINK" >> $file
+echo "    -- here list of cases" >> $file
+echo >> $file
+echo "    TARGET" >> $file
+echo "    -- here expected result:">> $file
+echo >> $file
+echo "TODO">> $file
+echo "   complete target                 TODO" >> $file
+echo "SUMMARY">> $file
+echo "   -- This task summary">> $file
+echo done
