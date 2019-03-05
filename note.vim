@@ -20,10 +20,10 @@ syn match  taskComment	"--.*$"
 syn match TaskNumber	"-\=\<\d*\.\=[0-9_]\>"
 
 syn keyword taskError		ERROR CRITICAL PROBLEM PROBLEMS FAIL FAILED DUE_DATE AMOUNT
-syn keyword taskTodo		TODO TARGET DESCRIPTION QA_TEST SEE QUESTION QUESTIONS INVESTIGATION ESTIMATION
+syn keyword taskTodo		TODO TARGET DESCRIPTION QA_TEST SEE QUESTION QUESTIONS INVESTIGATION ESTIMATION WEEK MONTH QUARTER YEAR TRIENNIAL QUINQUENNIAL TEN-YEAR
 syn keyword taskDraft		DRAFT FIX CAUSE CODE_REVIEW
 syn keyword taskDone		DONE SUMMARY SOLUTION INFO STATUS DELIVERED SUCCESS DONE_ON
-syn keyword taskProgress 	INPROGRESS WAIT NOTE LINK CANCELED 
+syn keyword taskProgress 	INPROGRESS WAIT NOTE LINK CANCELED START_DATE END_DATE TYPE_OF_PLAN
 syn region  taskNote		start=+NOTES:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskImportant	start=+IMPORTANT:+ skip=+\\\\\|\\"+  end=+"+
 syn region  taskTips 		start=+TIPS:+ skip=+\\\\\|\\"+  end=+"+
