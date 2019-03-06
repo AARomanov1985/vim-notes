@@ -7,16 +7,16 @@ cd "$name"
 touch $file
 echo -- $(date)>> $file
 echo TARGET>> $file
-echo     -- General target:>> $file
-echo     $4>> $file
-echo     -- When will it be considered that the goal is achieved? >> $file
-echo     -- Is it achievable?>> $file
-echo     -- Benefits:>> $file
-echo     >> $file
-echo     DUE_DATE>>$file
-echo     DONE_ON>>$file
-echo TODO>> $file
-echo '   complete target                 TODO' >> $file
-echo SUMMARY>> $file
-echo '   -- This task summary'>> $file
-echo done
+echo "    -- General target:">> $file
+echo "    $4" >> $file
+echo "    -- When will it be considered that the goal is achieved? " >> $file
+echo "    -- Is it achievable?" >> $file
+echo "    -- Benefits:" >> $file
+echo >> $file
+echo "    DUE_DATE" >>$file
+echo "    DONE_ON">>$file
+echo "TODO" >> $file
+echo "    complete target                 TODO" >> $file
+echo "SUMMARY" >> $file
+echo "    -- This task summary" >> $file
+echo >> $file
