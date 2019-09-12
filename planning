@@ -18,7 +18,7 @@ echo "    TARGET" >> $file
 echo "    -- here expected result:">> $file
 echo >> $file
 echo "TODO">> $file
-echo "   complete target                 TODO" >> $file
+echo "    complete target                 TODO" >> $file
 echo "SUMMARY">> $file
 echo "   -- This task summary">> $file
 echo done
