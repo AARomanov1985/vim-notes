@@ -21,3 +21,4 @@ echo "    complete target                 TODO" >> $file
 echo "SUMMARY" >> $file
 echo "    -- This task summary" >> $file
 echo >> $file
+vim $file
