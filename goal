@@ -13,6 +13,11 @@ echo "    -- When will it be considered that the goal is achieved? " >> $file
 echo "    -- Is it achievable?" >> $file
 echo "    -- Benefits:" >> $file
 echo >> $file
+echo "    INCOME" >>$file
+echo "    IMPORTANCE" >>$file
+echo "    COST" >>$file
+echo "    USEFULNESS" >>$file
+echo >> $file
 echo "    START_DATE" >>$file
 echo "    DUE_DATE" >>$file
 echo "    DONE_ON">>$file
