@@ -6,7 +6,7 @@ mkdir "$name"
 cd "$name"
 touch $file
 echo -- $(date)>> $file
-echo TARGET>> $file
+echo GOAL>> $file
 echo "    -- General target:">> $file
 echo "    $4" >> $file
 echo "    -- When will it be considered that the goal is achieved? " >> $file

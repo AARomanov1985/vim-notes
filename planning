@@ -17,6 +17,10 @@ echo >> $file
 echo "    TARGET" >> $file
 echo "    -- here expected result:">> $file
 echo >> $file
+echo "    AVAILABLE_TIME">> $file
+echo "    PLANNED_TIME">> $file
+echo "    SPARE_TIME">> $file
+echo >> $file
 echo "TODO">> $file
 echo "    complete target                 TODO" >> $file
 echo "SUMMARY">> $file
