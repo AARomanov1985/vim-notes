@@ -1,0 +1,14 @@
+# example:
+# note some_note
+id=$(date +%s%N)
+file="$@"_$id.note
+name="$@"
+touch "$file"
+echo -- id $id >> "$file"
+echo -- $(date)>> "$file"
+echo $name>> "$file"
+echo NOTE>> "$file"
+echo "    ">> "$file"
+echo LINK >> "$file"
+echo "    ">> "$file"
+vim "$file"
