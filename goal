@@ -1,11 +1,12 @@
 # example:
 # goal 2 T Java 'perform jvm tomorrow'
 name=#"$1"_OPEN_"$2"_"$3"_"$4"
-file=notes.note
+id=$(date +%s%N)
+file=notes_$id.note
 mkdir "$name"
 cd "$name"
 touch $file
-echo -- id $(date +%s%N) >> $file
+echo -- id $id >> $file
 echo -- $(date)>> $file
 echo GOAL>> $file
 echo "    -- General target:">> $file

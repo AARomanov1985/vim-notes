@@ -3,7 +3,8 @@ param1=$1
 typeOfPlan=${param1^^}
 startDate=$2
 endDate=$3
-file="$1"_plan.note
+id=$(date +%s%N)
+file="$1"_plan_$id.note
 touch $file
 echo "-- $(date)">> $file
 echo "DESCRIPTION">> $file
@@ -16,10 +17,6 @@ echo "    -- here list of cases" >> $file
 echo >> $file
 echo "    TARGET" >> $file
 echo "    -- here expected result:">> $file
-echo >> $file
-echo "    AVAILABLE_TIME">> $file
-echo "    PLANNED_TIME">> $file
-echo "    SPARE_TIME">> $file
 echo >> $file
 echo "TODO">> $file
 echo "    complete target                 TODO" >> $file
