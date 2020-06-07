@@ -6,6 +6,7 @@ endDate=$3
 id=$(date +%s%N)
 file="$1"_plan_$id.note
 touch $file
+echo -- id $id >> $file
 echo "-- $(date)">> $file
 echo "DESCRIPTION">> $file
 echo "    TYPE_OF_PLAN:                 $typeOfPlan">> $file
