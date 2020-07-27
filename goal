@@ -1,6 +1,6 @@
 # example:
-# goal 2 T Java 'perform jvm tomorrow'
-name=#"$1"_OPEN_"$2"_"$3"_"$4"
+# goal 2 Java 'perform jvm tomorrow'
+name=#"$1"_"$2"_"$3"
 id=$(date +%s%N)
 file=notes.note
 mkdir "$name"
@@ -10,7 +10,7 @@ echo -- id $id >> $file
 echo -- $(date)>> $file
 echo GOAL>> $file
 echo "    -- General target:">> $file
-echo "    $4" >> $file
+echo "    $3" >> $file
 echo "    -- When will it be considered that the goal is achieved? " >> $file
 echo "    -- Is it achievable?" >> $file
 echo "    -- Benefits:" >> $file

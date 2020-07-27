@@ -1,19 +1,28 @@
-#!/usr/bin/env bash
- 
-var1=$1
-var2=$2
-  
-var1=${var1:=$(date +%F)}
-var2=${var2:=$(date +%F)}
-   
-if [[ $(date +%s -d"$var1") -ge $(date +%s -d"$var2") ]]; then
-    str="ago"
-fi
-          
-planningfromtemplate day $var1
-mv day_plan.note "$var1"_todo.note
-until [[ "$var1" == "$var2" ]]; do
-    var1=$(date +%F -d"$var1 1 days $str")
-    planningfromtemplate day $var1
-    mv day_plan.note "$var1"_todo.note
-done
+#!/bin/bash
+file=week_plan_"$1".note
+id=$(date +%s%N)
+touch $file
+echo -- id $id >> $file
+echo -- $(date)>> $file
+echo DESCRIPTION>> $file
+echo "    TYPE_OF_PLAN:                 WEEK" >> $file
+echo "    START_DATE:                   "$1"" >> $file
+echo "    END_DATE:                     "$2"" >> $file
+echo >> $file
+echo LINK >> $file
+echo "    -- here list of cases" >> $file
+echo >> $file
+echo GOAL >> $file
+echo "    -- here list of goals" >> $file
+echo >> $file
+echo TODO >> $file
+echo "                   MON  TUE  WED  THU  FRI  SAT  SUN">> $file
+echo " -------------------- urgent --------------------------" >> $file
+echo " ------------------- important-------------------------" >> $file
+echo " ------------------- regular---------------------------" >> $file
+echo " ------------------------------------------------------" >> $file
+echo "                   MON  TUE  WED  THU  FRI  SAT  SUN" >> $file
+echo "SUMMARY" >> $file
+echo "    -- This task summary" >> $file
+echo >> $file
+vim $file
