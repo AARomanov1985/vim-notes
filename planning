@@ -4,7 +4,7 @@ typeOfPlan=${param1^^}
 startDate=$2
 endDate=$3
 id=$(date +%s%N)
-file="$1"_plan.note
+file="$1"_plan_"$2".note
 touch $file
 echo -- id $id >> $file
 echo "-- $(date)">> $file
@@ -20,7 +20,7 @@ echo "    GOAL" >> $file
 echo "    -- here expected result:">> $file
 echo >> $file
 echo "TODO">> $file
-echo "    complete target                 TODO" >> $file
+echo "-- some todo's" >> $file
 echo "SUMMARY">> $file
 echo "   -- This task summary">> $file
 echo done
