@@ -9,11 +9,7 @@ touch $file
 echo -- id $id >> $file
 echo -- $(date)>> $file
 echo GOAL>> $file
-echo "    -- General target:">> $file
 echo "    $3" >> $file
-echo "    -- When will it be considered that the goal is achieved? " >> $file
-echo "    -- Is it achievable?" >> $file
-echo "    -- Benefits:" >> $file
 echo >> $file
 echo "    START_DATE" >>$file
 echo "    DUE_DATE" >>$file

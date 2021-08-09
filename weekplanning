@@ -17,12 +17,11 @@ echo "    -- here list of goals" >> $file
 echo >> $file
 echo TODO >> $file
 echo "                   MON  TUE  WED  THU  FRI  SAT  SUN">> $file
-echo " -------------------- urgent --------------------------" >> $file
-echo " ------------------- important-------------------------" >> $file
-echo " ------------------- regular---------------------------" >> $file
+echo " ------------------------------------------------------" >> $file
+echo " Some todo         TODO TODO TODO TODO TODO TODO TODO" >> $file
 echo " ------------------------------------------------------" >> $file
 echo "                   MON  TUE  WED  THU  FRI  SAT  SUN" >> $file
 echo "SUMMARY" >> $file
-echo "    -- This task summary" >> $file
+echo "    -- This is a week summary" >> $file
 echo >> $file
 vim $file
