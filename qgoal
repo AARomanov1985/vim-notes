@@ -1,0 +1,16 @@
+# example:
+# qgoal 'Pay the bills'
+file="$1".note
+touch "$file"
+echo -- $(date)>> "$file"
+echo GOAL>> "$file"
+echo "    $1" >> "$file"
+echo >> "$file"
+echo "    START_DATE" >>"$file"
+echo "    DONE_ON">>"$file"
+echo "TODO" >> "$file"
+echo "    complete target                 TODO" >> "$file"
+echo >> "$file"
+echo "SUMMARY" >> "$file"
+echo >> "$file"
+vim "$file"

@@ -1,6 +1,6 @@
 # to create a link:
-sudo chmod +x newbug newp newt
-sudo ln -s newbug newp newt /usr/local/bin/
+sudo chmod +x goal
+sudo ln -s $(pwd)/goal /usr/bin/
 # to create syntax in vim:
 sudo cp note.vim /usr/share/vim/vim74/syntax/
 echo "au BufNewFile,BufRead *.note set filetype=note" >> ~/.vimrc

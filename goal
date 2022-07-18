@@ -1,22 +1,19 @@
 # example:
-# goal 2 Java 'perform jvm tomorrow'
-name=#"$1"_"$2"_"$3"
-id=$(date +%s%N)
+# goal 2 'Buy a new house'
+name=#"$1"_"$2"
 file=notes.note
 mkdir "$name"
 cd "$name"
 touch $file
-echo -- id $id >> $file
 echo -- $(date)>> $file
 echo GOAL>> $file
-echo "    $3" >> $file
+echo "    $2" >> $file
 echo >> $file
 echo "    START_DATE" >>$file
-echo "    DUE_DATE" >>$file
 echo "    DONE_ON">>$file
 echo "TODO" >> $file
 echo "    complete target                 TODO" >> $file
+echo >> $file
 echo "SUMMARY" >> $file
-echo "    -- This task summary" >> $file
 echo >> $file
 vim $file
