@@ -11,8 +11,8 @@ echo "    $2" >> $file
 echo >> $file
 echo "    START_DATE" >>$file
 echo "    DONE_ON">>$file
-echo "TODO" >> $file
-echo "    complete target                 TODO" >> $file
+echo >> $file
+echo "TODO todo something" >> $file
 echo >> $file
 echo "SUMMARY" >> $file
 echo >> $file
