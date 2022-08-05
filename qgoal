@@ -9,7 +9,7 @@ echo >> "$file"
 echo "    START_DATE" >>"$file"
 echo "    DONE_ON">>"$file"
 echo >> "$file"
-echo "TODO todo something" >> "$file"
+echo "TODO       todo something" >> $file
 echo >> "$file"
 echo "SUMMARY" >> "$file"
 echo >> "$file"
